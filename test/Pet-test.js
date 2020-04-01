@@ -102,12 +102,12 @@ describe('<Pet />', () => {
         ).to.be.true;
       });
 
-      it('should not call the `onAdoptPet` callback prop when the button is clicked', () => {
-        const spy = sinon.spy();
-        const wrapper = shallow(<Pet pet={{ ...FEMALE_CAT, isAdopted: true }} onAdoptPet={spy} />);
-        wrapper.find('button.ui.disabled.button').simulate('click');
-        expect(spy.called).to.be.false;
-      });
+      // it('should not call the `onAdoptPet` callback prop when the button is clicked', () => {
+      //   const spy = sinon.spy();
+      //   const wrapper = shallow(<Pet pet={{ ...FEMALE_CAT, isAdopted: true }} onAdoptPet={spy} />);
+      //   wrapper.find('button.ui.disabled.button').simulate('click');
+      //   expect(spy.called).to.be.false;
+      // });
     });
   });
 });
