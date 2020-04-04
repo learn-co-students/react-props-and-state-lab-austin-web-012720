@@ -38,6 +38,14 @@ class App extends React.Component {
     this.setState({ pets: updatePets})
   };
 
+  // adoptAPet = petId => {
+  //   this.setState(previousState => {
+  //     const petIndex = previousState.pets.findIndex(pet => pet.id === petId);
+  //     previousState.pets[petIndex].isAdopted = true;
+  //     return previousState;
+  //   })
+  //  };
+
   render() {
     return (
       <div className="ui container">
